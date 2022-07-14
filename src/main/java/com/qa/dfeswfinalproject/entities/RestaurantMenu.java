@@ -15,32 +15,27 @@ public class RestaurantMenu {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
 
-	@Column (nullable = false)
+	@Column(nullable = false)
 	private String starter;
-	
-	@Column (nullable = false)
+
+	@Column(nullable = false)
 	private String sideDish;
-	
-	@Column (nullable = false)
+
+	@Column(nullable = false)
 	private String mainDish;
-	
-	@Column (nullable = false)
+
+	@Column(nullable = false)
 	private String dessert;
-	
-	@Column (nullable = false)
+
+	@Column(nullable = false)
 	private Float price;
-	
-	@Column (nullable = false)
+
+	@Column(nullable = false)
 	private String cuisine;
-	
-	public RestaurantMenu () {
-	
+
+	public RestaurantMenu() {
 
 	}
-	
-	
-	
-	
 
 	public RestaurantMenu(String starter, String sideDish, String mainDish, String dessert, Float price,
 			String cuisine) {
@@ -53,23 +48,25 @@ public class RestaurantMenu {
 		this.cuisine = cuisine;
 	}
 
-
-
-
-
-	public RestaurantMenu(long id, String starter, String sideDish, String mainDish, String dessert, Float price,String cuisine) {
+	public RestaurantMenu(long id, String starter, String sideDish, String mainDish, String dessert, Float price,
+			String cuisine) {
 		super();
 
+		this.id = id;
 		this.starter = starter;
-		this.sideDish =starter;
-		this.mainDish =mainDish;
+		this.sideDish = starter;
+		this.mainDish = mainDish;
 		this.price = price;
-		this.cuisine =cuisine;
-
+		this.cuisine = cuisine;
+		this.dessert = dessert;
 	}
 
 	public long getId() {
 		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
 	}
 
 	public Float getPrice() {
@@ -119,23 +116,21 @@ public class RestaurantMenu {
 	public void setDessert(String dessert) {
 		this.dessert = dessert;
 	}
-	
+
 	@Override
-	
+
 	public boolean equals(Object obj) {
 		if (this == obj)
 			return true;
 		if (obj == null)
-		return false;
+			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		
-		
+
 		RestaurantMenu other = (RestaurantMenu) obj;
-		return Objects.equals(starter,other.starter )&&Objects.equals(sideDish,other.sideDish)&&Objects.equals(mainDish,other.mainDish)
-			&&Objects.equals(cuisine, other.cuisine)&&Objects.equals(dessert,other.dessert)&&Objects.equals(price, other.price)	&&id==other.id;
+		return Objects.equals(starter, other.starter) && Objects.equals(sideDish, other.sideDish)
+				&& Objects.equals(mainDish, other.mainDish) && Objects.equals(cuisine, other.cuisine) && id == other.id
+				&& Objects.equals(dessert, other.dessert) && Objects.equals(price, other.price);
 	}
-	
+
 }
-
-

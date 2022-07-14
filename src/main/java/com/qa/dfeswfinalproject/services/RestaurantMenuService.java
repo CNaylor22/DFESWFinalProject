@@ -16,14 +16,11 @@ public class RestaurantMenuService {
 	}
 
 	public RestaurantMenu create(RestaurantMenu restaurantMenu) {
-		return this.repo(restaurantMenu);
+		return this.repo.saveAndFlush(restaurantMenu);
 
 	}
 
-	private RestaurantMenu repo(RestaurantMenu restaurantMenu) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	
 
 	public RestaurantMenu readById(long id) {
 		return this.repo.findById(id).get();

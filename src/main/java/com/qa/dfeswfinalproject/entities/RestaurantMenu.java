@@ -15,6 +15,9 @@ public class RestaurantMenu {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
 
+	
+	
+	
 	@Column(nullable = false)
 	private String starter;
 
@@ -37,8 +40,7 @@ public class RestaurantMenu {
 
 	}
 
-	public RestaurantMenu(String starter, String sideDish, String mainDish, String dessert, Float price,
-			String cuisine) {
+	public RestaurantMenu(String starter, String sideDish, String mainDish, String dessert, Float price,String cuisine) {
 		super();
 		this.starter = starter;
 		this.sideDish = sideDish;
@@ -48,17 +50,16 @@ public class RestaurantMenu {
 		this.cuisine = cuisine;
 	}
 
-	public RestaurantMenu(long id, String starter, String sideDish, String mainDish, String dessert, Float price,
-			String cuisine) {
+	public RestaurantMenu(long id, String starter, String sideDish, String mainDish, String dessert, Float price,String cuisine) {
 		super();
-
 		this.id = id;
 		this.starter = starter;
-		this.sideDish = starter;
+		this.sideDish = sideDish;
 		this.mainDish = mainDish;
+		this.dessert = dessert;
 		this.price = price;
 		this.cuisine = cuisine;
-		this.dessert = dessert;
+		
 	}
 
 	public long getId() {
@@ -116,7 +117,10 @@ public class RestaurantMenu {
 	public void setDessert(String dessert) {
 		this.dessert = dessert;
 	}
-
+    @Override
+	public int hashCode() {
+	return Objects.hash(starter, sideDish, mainDish, dessert, price, cuisine);
+    }
 	@Override
 
 	public boolean equals(Object obj) {

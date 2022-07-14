@@ -1,7 +1,6 @@
 package com.qa.dfeswfinalproject.controllers;
 
 import java.util.List;
-
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -30,7 +29,7 @@ public class RestaurantMenuController {
 
 	}
 
-	@GetMapping("readById/{id}")
+	@GetMapping("/readById/{id}")
 	public RestaurantMenu readById(@PathVariable long id) {
 		return this.service.readById(id);
 
@@ -43,14 +42,14 @@ public class RestaurantMenuController {
 	}
 
 	@PutMapping("/update/{id}")
-	public RestaurantMenu update(@PathVariable Long id, @RequestBody RestaurantMenu restaurantMenu) {
+	public RestaurantMenu update(@PathVariable long id, @RequestBody RestaurantMenu restaurantMenu) {
 		return this.service.update(id, restaurantMenu);
 
 	}
 
 	@DeleteMapping("/delete/{id}")
-	public RestaurantMenu delete(@PathVariable Long id) {
-		return this.delete(id);
+	public boolean delete(@PathVariable long id) {
+		return this.service.delete(id);
 	}
 
 }

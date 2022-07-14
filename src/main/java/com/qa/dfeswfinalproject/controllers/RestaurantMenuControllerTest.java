@@ -13,7 +13,6 @@ import java.util.List;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
@@ -37,7 +36,7 @@ import com.qa.dfeswfinalproject.entities.RestaurantMenu;
 
 public class RestaurantMenuControllerTest {
 
-	
+}
 	
 	
 	@Autowired
@@ -83,7 +82,7 @@ public class RestaurantMenuControllerTest {
 		
 	@Test
 		
-	public void readAllTest() throws Exception { 	{
+	public void readAllTest() throws Exception { 	
 		List<RestaurantMenu> output = newArrayList<>();
 		RestaurantMenu entry = new RestaurantMenu(2L,"Olives", "Salad", "Risotto", "Tiramisu", 14.99 , "Italian");
 		output.add(entry);
@@ -133,7 +132,7 @@ public class RestaurantMenuControllerTest {
 		
 		}
 		
-	}	
+		
 		
 		
 		
@@ -143,5 +142,4 @@ public class RestaurantMenuControllerTest {
 		
 	
 	
-	}
-}
+	

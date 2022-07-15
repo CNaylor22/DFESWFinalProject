@@ -1,1 +1,1 @@
-INSERT INTO `restaurantMenu`(`starter`, `side_dish`, `main_dish`, `dessert`, `cuisine`,` price`) VALUES ('Olives', 'Salad', 'Risotto', 'Tiramisu', 'Italian', `14.99`);
+INSERT INTO `restaurant_menu`(`starter`, `side_dish`, `main_dish`, `dessert`,`price`,`cuisine`) VALUES ('Olives', 'Salad', 'Risotto', 'Tiramisu','14.99', 'Italian');

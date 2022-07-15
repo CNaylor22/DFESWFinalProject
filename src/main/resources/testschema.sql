@@ -6,7 +6,7 @@ CREATE TABLE `restaurant_menu` (
 `side_dish` VARCHAR(255) NOT NULL,
 `main_dish` VARCHAR(255) NOT NULL,
 `dessert` VARCHAR(255) NOT NULL,
-`cuisine` VARCHAR(255) NOT NULL,
 `price` FLOAT NOT NULL, 
+`cuisine` VARCHAR(255) NOT NULL,
 PRIMARY KEY (`id`)
 );

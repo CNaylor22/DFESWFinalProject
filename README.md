@@ -24,7 +24,7 @@ Here is a link to my JIRA board https://claire-naylor.atlassian.net/jira/softwar
 
 
 
-### Screenshots of build success, coverage report, JUnit testing, persistence in MySQL and requests through Postman. ###
+### Screenshots of build success, coverage report, swagger API documentation, JUnit testing, persistence in MySQL and requests through Postman. ###
 ![buildsuccess](/Documentation/BuildSuccessScreenshot.png)
 ![coveragedetails](/Documentation/CoverageDetailScreenshot.png)
 ![coveragejunittest](/Documentation/CoverageJUnitTestScreenshot.png)
@@ -38,7 +38,7 @@ Here is a link to my JIRA board https://claire-naylor.atlassian.net/jira/softwar
 ![postmanreadbyid](/Documentation/PostmanReadByIdGetRequestScreenshot.png)
 ![postmanupdateafter](/Documentation/PostmanScreenshotPUTUpdateAfter.png)
 ![postmanupdatebefore](/Documentation/PostmanScreenshotPUTUpdateBefore.png)
-
+![swaggerapiscreenshot](/Documentation/SwaggerScreenshot.png)
 
 
 

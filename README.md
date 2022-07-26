@@ -13,7 +13,7 @@ I expect to encounter a few issues along the way, but I am confident of being ab
 The first few days of the project went well then I encountered some issues with my syntax on Thursday so the result of this was that my code wouldn't run. I started to go back through each class and analyse each method and constructor before establishing the issues were minor and luckily easily solved. 
 Once these syntax issues were fixed I made really good progress late on Thursday evening which put me back on target with my deadline and staying on track with my Jira board. 
 I have learnt to check the code thoroughly before moving on, even if the code isn't showing any errors, doesn't mean that there aren't hidden problems like case sensitive Data types. 
-I am also aware that putting my price within the menu class wasn't the best option as it doesn't have context. This is something I will improve for the future revision of my project. I would also like to expand on the project to include a drinks menu and an order functionality class too.
+I am also aware that putting my price within the menu class wasn't the best option as it doesn't have context, but I wanted to show I knew how to enter floats as well as strings. This is something I will improve for the future revision of my project. I would also like to expand on the project to include a drinks menu and an order functionality class too.
 There were some stretch goals which I added to my Jira board which I didn't get to complete but may return to these for future revisions.
 
 
